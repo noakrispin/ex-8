@@ -1,0 +1,85 @@
+/* ImageBrowser.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  max-height: 600px;
+  margin: auto;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f0f0f0; 
+  width: 100%;
+  overflow-x: auto; 
+  border-radius: 8px;
+}
+
+.thumbnail {
+  margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  border-color: #333;
+}
+
+.main-image {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  display: inline-block; /* Display arrows inline */
+}
